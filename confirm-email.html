@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Email confirmé — P'tiCoin</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: #FFF1E0;
+      color: #3B2412;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* Bulles pastel décoratives (cohérent avec le composant Bulles de l'app) */
+    .bulle {
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .bulle-1 { top: 12%; left: 6%;  width: 110px; height: 110px; background: #A8E6CF; opacity: 0.55; }
+    .bulle-2 { top: 22%; right: 8%; width:  90px; height:  90px; background: #FFD56B; opacity: 0.55; }
+    .bulle-3 { bottom: 14%; left: 12%; width: 60px; height: 60px; background: #FFB3C0; opacity: 0.50; }
+
+    .container {
+      max-width: 480px;
+      width: 100%;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .mascotte {
+      display: inline-block;
+      margin-bottom: 16px;
+      filter: drop-shadow(0 6px 12px rgba(92, 58, 36, 0.15));
+    }
+
+    .badge-succes {
+      display: inline-block;
+      background: #A8E6CF;
+      color: #2D6A4F;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+      letter-spacing: 0.3px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+      color: #5C3A24;
+      margin-bottom: 14px;
+      letter-spacing: -0.4px;
+    }
+
+    .card {
+      background: #FFFCF5;
+      border: 2px solid #F2DEC8;
+      border-radius: 20px;
+      padding: 24px 22px;
+      margin: 20px 0;
+      box-shadow: 0 2px 10px rgba(92, 58, 36, 0.06);
+      text-align: left;
+    }
+
+    .card p {
+      font-size: 15px;
+      color: #3B2412;
+      margin-bottom: 10px;
+    }
+
+    .card p:last-child { margin-bottom: 0; }
+
+    .card strong { color: #5C3A24; font-weight: 700; }
+
+    .footer-mascotte {
+      margin-top: 28px;
+      font-size: 13px;
+      color: #8B6F58;
+    }
+
+    .footer-mascotte a {
+      color: #9C5A3A;
+      font-weight: 700;
+      text-decoration: none;
+      border-bottom: 1px dotted #9C5A3A;
+    }
+  </style>
+</head>
+<body>
+  <!-- Bulles décoratives -->
+  <div class="bulle bulle-1"></div>
+  <div class="bulle bulle-2"></div>
+  <div class="bulle bulle-3"></div>
+
+  <div class="container">
+    <!--
+      Mascotte P'tit — version expression "happy" (yeux fermés + sourire).
+      Portage HTML pur du composant src/components/Mascot.tsx du repo pticoin
+      (caca soft-serve kawaii, 3 étages + pointe + visage sur l'étage du milieu).
+      Source de vérité : src/components/Mascot.tsx. Si la mascotte est repensée
+      dans l'app, re-porter ce SVG en conséquence (les paths sont identiques,
+      seuls les attributs sont en kebab-case côté HTML).
+    -->
+    <div class="mascotte">
+      <svg viewBox="0 0 100 100" width="160" height="160" xmlns="http://www.w3.org/2000/svg" aria-label="P'tit, la mascotte de P'tiCoin">
+        <defs>
+          <linearGradient id="pti-grad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#A47148"/>
+            <stop offset="100%" stop-color="#8B5A3C"/>
+          </linearGradient>
+        </defs>
+
+        <!-- ombre portée -->
+        <ellipse cx="50" cy="92" rx="30" ry="3" fill="#000" opacity="0.12"/>
+
+        <!-- ÉTAGE 1 — bas (large) -->
+        <path d="M 12 88 Q 12 64 50 64 Q 88 64 88 88 Z" fill="url(#pti-grad)" stroke="#5C3A24" stroke-width="2.4" stroke-linejoin="round"/>
+        <path d="M 22 80 Q 22 70 32 66" fill="none" stroke="#C68B5C" stroke-width="3.5" stroke-linecap="round" opacity="0.6"/>
+
+        <!-- drape étage 1 ↔ 2 -->
+        <path d="M 24 64 Q 50 56 76 64" fill="none" stroke="#5C3A24" stroke-width="1.8" stroke-linecap="round" opacity="0.55"/>
+
+        <!-- ÉTAGE 2 — milieu (visage ici) -->
+        <path d="M 24 64 Q 24 42 50 42 Q 76 42 76 64 Z" fill="url(#pti-grad)" stroke="#5C3A24" stroke-width="2.4" stroke-linejoin="round"/>
+        <path d="M 30 58 Q 30 48 38 44" fill="none" stroke="#C68B5C" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+
+        <!-- drape étage 2 ↔ 3 -->
+        <path d="M 36 42 Q 50 36 64 42" fill="none" stroke="#5C3A24" stroke-width="1.6" stroke-linecap="round" opacity="0.55"/>
+
+        <!-- ÉTAGE 3 — haut -->
+        <path d="M 36 42 Q 36 28 44 24 Q 50 22 56 24 Q 64 28 64 42 Z" fill="url(#pti-grad)" stroke="#5C3A24" stroke-width="2.4" stroke-linejoin="round"/>
+        <path d="M 40 36 Q 40 30 44 27" fill="none" stroke="#C68B5C" stroke-width="2.5" stroke-linecap="round" opacity="0.55"/>
+
+        <!-- drape étage 3 ↔ pointe -->
+        <path d="M 44 24 Q 50 20 56 24" fill="none" stroke="#5C3A24" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+
+        <!-- POINTE -->
+        <path d="M 44 24 Q 44 14 49 9 Q 50 8 51 9 Q 56 14 56 24 Z" fill="url(#pti-grad)" stroke="#5C3A24" stroke-width="2.4" stroke-linejoin="round"/>
+        <path d="M 46 20 Q 47 14 49 11" fill="none" stroke="#C68B5C" stroke-width="2" stroke-linecap="round" opacity="0.55"/>
+
+        <!-- joues roses -->
+        <ellipse cx="33" cy="55" rx="3.4" ry="2.2" fill="#FFD0D0" opacity="0.95"/>
+        <ellipse cx="67" cy="55" rx="3.4" ry="2.2" fill="#FFD0D0" opacity="0.95"/>
+
+        <!-- visage expression "happy" (yeux fermés + sourire) -->
+        <path d="M 38 51 Q 42 47 46 51" fill="none" stroke="#5C3A24" stroke-width="2.6" stroke-linecap="round"/>
+        <path d="M 54 51 Q 58 47 62 51" fill="none" stroke="#5C3A24" stroke-width="2.6" stroke-linecap="round"/>
+        <path d="M 42 56 Q 50 62 58 56" fill="none" stroke="#5C3A24" stroke-width="2.4" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <div class="badge-succes">EMAIL CONFIRMÉ ✓</div>
+    <h1>C'est bon, ton compte est prêt !</h1>
+
+    <div class="card">
+      <p><strong>Étape suivante :</strong> retourne dans l'app P'tiCoin sur ton téléphone et connecte-toi avec ton email et ton mot de passe.</p>
+      <p>Tu peux refermer cet onglet — tout se passe maintenant dans l'app 🌸</p>
+    </div>
+
+    <p class="footer-mascotte">
+      Un souci ? Écris à <a href="mailto:contact@pticoin.app">contact@pticoin.app</a>
+    </p>
+  </div>
+</body>
+</html>
