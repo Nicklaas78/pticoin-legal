@@ -27,7 +27,11 @@
       margin-bottom: 40px;
     }
 
-    .logo { font-size: 48px; margin-bottom: 12px; }
+    .logo {
+      display: inline-block;
+      margin-bottom: 12px;
+      filter: drop-shadow(0 4px 8px rgba(92, 58, 36, 0.12));
+    }
 
     h1 {
       font-size: 26px;
@@ -151,7 +155,38 @@
   <div class="container">
 
     <header>
-      <div class="logo">💩</div>
+      <!--
+        Mascotte P'tit — portage SVG inline du composant src/components/Mascot.tsx
+        (expression "happy"). Source de vérité : assets/mascot.svg dans le repo
+        principal pticoin. Si la mascotte est repensée, re-porter ce bloc.
+      -->
+      <div class="logo">
+        <svg viewBox="0 0 100 100" width="80" height="80" xmlns="http://www.w3.org/2000/svg" aria-label="P'tit, la mascotte de P'tiCoin">
+          <defs>
+            <linearGradient id="pti-grad-privacy" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#A47148"/>
+              <stop offset="100%" stop-color="#8B5A3C"/>
+            </linearGradient>
+          </defs>
+          <ellipse cx="50" cy="92" rx="30" ry="3" fill="#000" opacity="0.12"/>
+          <path d="M 12 88 Q 12 64 50 64 Q 88 64 88 88 Z" fill="url(#pti-grad-privacy)" stroke="#5C3A24" stroke-width="2.4" stroke-linejoin="round"/>
+          <path d="M 22 80 Q 22 70 32 66" fill="none" stroke="#C68B5C" stroke-width="3.5" stroke-linecap="round" opacity="0.6"/>
+          <path d="M 24 64 Q 50 56 76 64" fill="none" stroke="#5C3A24" stroke-width="1.8" stroke-linecap="round" opacity="0.55"/>
+          <path d="M 24 64 Q 24 42 50 42 Q 76 42 76 64 Z" fill="url(#pti-grad-privacy)" stroke="#5C3A24" stroke-width="2.4" stroke-linejoin="round"/>
+          <path d="M 30 58 Q 30 48 38 44" fill="none" stroke="#C68B5C" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+          <path d="M 36 42 Q 50 36 64 42" fill="none" stroke="#5C3A24" stroke-width="1.6" stroke-linecap="round" opacity="0.55"/>
+          <path d="M 36 42 Q 36 28 44 24 Q 50 22 56 24 Q 64 28 64 42 Z" fill="url(#pti-grad-privacy)" stroke="#5C3A24" stroke-width="2.4" stroke-linejoin="round"/>
+          <path d="M 40 36 Q 40 30 44 27" fill="none" stroke="#C68B5C" stroke-width="2.5" stroke-linecap="round" opacity="0.55"/>
+          <path d="M 44 24 Q 50 20 56 24" fill="none" stroke="#5C3A24" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/>
+          <path d="M 44 24 Q 44 14 49 9 Q 50 8 51 9 Q 56 14 56 24 Z" fill="url(#pti-grad-privacy)" stroke="#5C3A24" stroke-width="2.4" stroke-linejoin="round"/>
+          <path d="M 46 20 Q 47 14 49 11" fill="none" stroke="#C68B5C" stroke-width="2" stroke-linecap="round" opacity="0.55"/>
+          <ellipse cx="33" cy="55" rx="3.4" ry="2.2" fill="#FFD0D0" opacity="0.95"/>
+          <ellipse cx="67" cy="55" rx="3.4" ry="2.2" fill="#FFD0D0" opacity="0.95"/>
+          <path d="M 38 51 Q 42 47 46 51" fill="none" stroke="#5C3A24" stroke-width="2.6" stroke-linecap="round"/>
+          <path d="M 54 51 Q 58 47 62 51" fill="none" stroke="#5C3A24" stroke-width="2.6" stroke-linecap="round"/>
+          <path d="M 42 56 Q 50 62 58 56" fill="none" stroke="#5C3A24" stroke-width="2.4" stroke-linecap="round"/>
+        </svg>
+      </div>
       <h1>Politique de confidentialité</h1>
       <p class="subtitle">P'tiCoin · Dernière mise à jour : 30 avril 2026</p>
     </header>
