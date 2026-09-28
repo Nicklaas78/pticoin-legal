@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- BROUILLON — à faire relire par un juriste avant soumission aux stores -->
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
@@ -81,16 +80,6 @@
       margin-bottom: 8px;
     }
 
-    .brouillon-banner {
-      background: #FFF3CD;
-      border: 2px solid #F0C040;
-      border-radius: 10px;
-      padding: 14px 18px;
-      margin-bottom: 32px;
-      font-size: 14px;
-      color: #856404;
-    }
-
     .contact-box {
       background: #8B5A3C;
       color: #FFFFFF;
@@ -127,11 +116,6 @@
   <div class="container">
 
     <header>
-      <!--
-        Mascotte P'tit — portage SVG inline du composant src/components/Mascot.tsx
-        (expression "happy"). Source de vérité : assets/mascot.svg dans le repo
-        principal pticoin. Si la mascotte est repensée, re-porter ce bloc.
-      -->
       <div class="logo">
         <svg viewBox="0 0 100 100" width="80" height="80" xmlns="http://www.w3.org/2000/svg" aria-label="P'tit, la mascotte de P'tiCoin">
           <defs>
@@ -160,47 +144,54 @@
         </svg>
       </div>
       <h1>Conditions Générales d'Utilisation</h1>
-      <p class="subtitle">P'tiCoin · Dernière mise à jour : 2 mai 2026</p>
+      <p class="subtitle">P'tiCoin · Dernière mise à jour : 28 septembre 2026</p>
     </header>
-
-    <div class="brouillon-banner">
-      ⚠️ <strong>Document en cours de finalisation.</strong> Ce texte est un brouillon à faire relire par un juriste avant la mise en production.
-    </div>
 
     <p>
       Bienvenue sur <strong>P'tiCoin</strong>, l'application collaborative pour trouver, noter et ajouter des toilettes publiques. En créant un compte ou en utilisant l'application, tu acceptes les présentes Conditions Générales d'Utilisation (CGU).
     </p>
 
-    <!-- 1. ÉDITEUR -->
     <h2>1. Éditeur de l'application</h2>
     <div class="card">
       <p class="card-title">Nicolas Mathieu</p>
-      <p>Développeur indépendant — P'tiCoin</p>
+      <p>Particulier, éditeur de l'application P'tiCoin</p>
       <p>Contact : <a href="mailto:contact@pticoin.app">contact@pticoin.app</a></p>
     </div>
+    <div class="card">
+      <p class="card-title">Hébergement</p>
+      <p>
+        Données de l'application : Supabase Pte. Ltd., 65 Chulia Street #38-02/03, OCBC Centre, Singapour 049513,
+        sur des serveurs situés à Paris (Amazon Web Services, région eu-west-3).<br />
+        Pages web (CGU, politique de confidentialité) : GitHub Pages, service de GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis.
+      </p>
+    </div>
 
-    <!-- 2. OBJET -->
     <h2>2. Objet de l'application</h2>
     <p>
-      P'tiCoin est une plateforme communautaire gratuite permettant aux utilisateurs de :
+      P'tiCoin est un service communautaire gratuit permettant aux utilisateurs de :
     </p>
     <ul>
-      <li>consulter des toilettes publiques référencées par la communauté ;</li>
+      <li>consulter des toilettes publiques référencées par la communauté P'tiCoin et par les contributeurs d'OpenStreetMap (voir §11) ;</li>
       <li>ajouter de nouvelles toilettes avec photos et informations pratiques ;</li>
+      <li>compléter les informations d'une fiche (horaires, papier, équipements) ;</li>
       <li>noter et commenter des toilettes ;</li>
       <li>signaler des informations incorrectes ou des contenus inappropriés.</li>
     </ul>
 
-    <!-- 3. ACCÈS -->
-    <h2>3. Accès à l'application</h2>
+    <h2>3. Accès à l'application et âge minimum</h2>
     <p>
-      L'application est accessible gratuitement. Certaines fonctionnalités (ajout de toilette, notation, photos) nécessitent la création d'un compte avec une adresse email valide. La vérification de l'adresse email est obligatoire avant toute contribution.
+      L'application est gratuite. Sans compte, tu peux la consulter en mode invité (lecture seule). Pour contribuer (ajout de toilette, avis, photos, infos, signalements), tu dois créer un compte avec une adresse e-mail valide. La vérification de l'adresse e-mail est obligatoire avant toute contribution.
     </p>
+    <div class="card">
+      <span class="badge">15 ans minimum</span>
+      <p>
+        Il faut avoir <strong>au moins 15 ans</strong> pour créer un compte P'tiCoin. À l'inscription, en cochant la case dédiée, tu confirmes avoir au moins 15 ans et accepter les présentes CGU ainsi que la <a href="privacy.html">Politique de confidentialité</a>. Si nous apprenons qu'un compte a été créé par une personne de moins de 15 ans, nous le supprimons.
+      </p>
+    </div>
     <p>
-      P'tiCoin est disponible sur iOS (App Store) et Android (Google Play). L'accès en mode invité (lecture seule) est possible sans compte.
+      P'tiCoin est disponible sur iPhone et sur Android.
     </p>
 
-    <!-- 4. COMPTE UTILISATEUR -->
     <h2>4. Compte utilisateur</h2>
     <p>
       Tu es responsable de la confidentialité de tes identifiants. En cas d'utilisation frauduleuse de ton compte, tu dois nous en informer sans délai à <a href="mailto:contact@pticoin.app">contact@pticoin.app</a>.
@@ -208,8 +199,10 @@
     <p>
       Chaque utilisateur ne peut disposer que d'un seul compte. Les comptes fictifs ou les comptes créés à des fins malveillantes seront supprimés.
     </p>
+    <p>
+      Tu peux supprimer ton compte à tout moment depuis <strong>Profil → Supprimer mon compte</strong>, ou par e-mail si tu n'as plus l'application (voir la <a href="privacy.html#supprimer-compte">Politique de confidentialité, §8</a>).
+    </p>
 
-    <!-- 5. RÈGLES DE CONDUITE -->
     <h2>5. Règles de conduite</h2>
     <div class="card">
       <span class="badge">À respecter</span>
@@ -217,86 +210,109 @@
       <ul style="margin-top: 8px;">
         <li>publier des informations fausses, mensongères ou trompeuses ;</li>
         <li>uploader des photos sans rapport avec les toilettes (contenus inappropriés, illicites, violents, pornographiques…) ;</li>
-        <li>harceler, diffamer ou porter atteinte à d'autres utilisateurs ;</li>
+        <li>harceler, insulter, menacer, diffamer ou porter atteinte à d'autres personnes ;</li>
+        <li>publier des propos haineux ou discriminatoires ;</li>
+        <li>choisir un pseudo injurieux, ou qui se fait passer pour quelqu'un d'autre ;</li>
         <li>utiliser l'application à des fins commerciales ou publicitaires ;</li>
         <li>tenter de pirater, contourner ou saturer les serveurs ;</li>
         <li>créer des fausses fiches de toilettes en masse (spam).</li>
       </ul>
     </div>
+    <div class="card">
+      <span class="badge">Tolérance zéro</span>
+      <p>
+        Les contenus abusifs (haineux, violents, à caractère sexuel, harcelants, discriminatoires ou illicites) et les comportements abusifs envers les autres utilisateurs n'ont pas leur place sur P'tiCoin. Ils sont retirés, et leur auteur peut être exclu définitivement.
+      </p>
+    </div>
     <p>
-      Tout manquement à ces règles peut entraîner la suspension ou la suppression définitive du compte, sans préavis.
+      Tout manquement à ces règles peut entraîner la suspension ou la suppression définitive du compte. Les raisons te sont communiquées dans les conditions prévues au §7.
     </p>
 
-    <!-- 6. CONTENU UTILISATEUR -->
     <h2>6. Contenu publié par les utilisateurs</h2>
     <p>
       Tu restes propriétaire du contenu que tu publies (fiches, avis, photos). En le publiant, tu accordes à P'tiCoin une licence non exclusive, mondiale et gratuite pour l'afficher dans l'application et le distribuer aux autres utilisateurs.
     </p>
     <p>
-      <strong>Important :</strong> si tu supprimes ton compte, les fiches de toilettes que tu as créées restent dans l'application (elles sont utiles à la communauté) mais elles ne sont plus liées à ton identité.
+      <strong>Important :</strong> si tu supprimes ton compte, les fiches de toilettes que tu as créées et les infos que tu as ajoutées aux fiches restent dans l'application (elles sont utiles à la communauté), mais elles ne sont plus liées à ton identité.
     </p>
     <p>
       Tu garantis que tu disposes des droits nécessaires sur les photos que tu uploades et qu'elles ne violent pas les droits de tiers.
     </p>
 
-    <!-- 7. MODÉRATION -->
-    <h2>7. Modération</h2>
+    <h2>7. Signalements et modération</h2>
     <p>
-      P'tiCoin dispose d'un système de signalement communautaire. Au-delà d'un certain seuil de signalements, une fiche ou un contenu peut être automatiquement masqué en attente de vérification.
+      Tout le monde peut nous signaler un contenu contraire aux présentes CGU ou à la loi :
+    </p>
+    <ul>
+      <li>dans l'application, avec les boutons « Signaler » d'une fiche ou d'une photo (compte requis) ;</li>
+      <li>par e-mail à <a href="mailto:contact@pticoin.app">contact@pticoin.app</a>, avec ou sans compte, pour tout contenu (fiche, photo, avis, pseudo).</li>
+    </ul>
+    <p>
+      Dès 3 signalements de personnes différentes, une fiche ou une photo est automatiquement masquée en attendant qu'on la vérifie. Nous examinons les signalements dans les meilleurs délais et retirons les contenus contraires à ces règles.
     </p>
     <p>
-      Nous nous réservons le droit de supprimer tout contenu qui violerait les présentes CGU ou les lois en vigueur, sans obligation de motivation préalable.
+      Nous nous réservons le droit de retirer ou de masquer tout contenu qui violerait les présentes CGU ou les lois en vigueur, et de suspendre ou supprimer le compte concerné. Quand nous retirons un contenu ou suspendons un compte après vérification, nous en donnons la raison à son auteur par e-mail. Un masquage automatique (3 signalements) est provisoire, le temps de cette vérification. Si tu penses qu'il s'agit d'une erreur, tu peux la contester en écrivant à <a href="mailto:contact@pticoin.app">contact@pticoin.app</a>.
     </p>
 
-    <!-- 8. DISPONIBILITÉ -->
     <h2>8. Disponibilité du service</h2>
     <p>
       P'tiCoin est un service gratuit mis à disposition sans engagement de disponibilité. Nous faisons notre possible pour maintenir le service opérationnel, mais nous ne pouvons pas garantir un accès ininterrompu. Des maintenances ponctuelles peuvent entraîner des interruptions temporaires.
     </p>
 
-    <!-- 9. RESPONSABILITÉ -->
     <h2>9. Limitation de responsabilité</h2>
     <p>
-      Les informations publiées sur P'tiCoin proviennent des utilisateurs. Nous ne pouvons pas garantir leur exactitude, leur exhaustivité ou leur mise à jour. P'tiCoin décline toute responsabilité en cas d'informations erronées (horaires, accessibilité, état des toilettes…).
+      Les informations publiées sur P'tiCoin proviennent en grande partie d'OpenStreetMap (voir §11), et des utilisateurs de P'tiCoin qui les complètent. Nous ne pouvons pas garantir leur exactitude, leur exhaustivité ou leur mise à jour. P'tiCoin décline toute responsabilité en cas d'informations erronées (horaires, accessibilité, état des toilettes…).
     </p>
     <p>
       P'tiCoin ne saurait être tenu responsable de dommages directs ou indirects résultant de l'utilisation ou de l'impossibilité d'utiliser l'application.
     </p>
 
-    <!-- 10. DONNÉES PERSONNELLES -->
     <h2>10. Données personnelles</h2>
     <p>
       Le traitement de tes données personnelles est décrit dans notre <a href="privacy.html">Politique de confidentialité</a>, conforme au RGPD.
     </p>
 
-    <!-- 11. PROPRIÉTÉ INTELLECTUELLE -->
-    <h2>11. Propriété intellectuelle</h2>
+    <h2>11. Propriété intellectuelle et sources des données</h2>
     <p>
-      L'application P'tiCoin, son code, son design, son logo et sa mascotte sont la propriété exclusive de Nicolas Mathieu. Toute reproduction ou utilisation sans autorisation est interdite.
+      L'application P'tiCoin, son code, son design, son logo et sa mascotte appartiennent à Nicolas Mathieu. Toute reproduction ou utilisation sans autorisation est interdite.
+    </p>
+    <div class="card">
+      <p class="card-title">Données OpenStreetMap</p>
+      <p>
+        La plupart des toilettes affichées (emplacement, nom, équipements) viennent d'<strong>OpenStreetMap</strong>, une base de données ouverte et collaborative :
+        © les contributeurs d'OpenStreetMap, données disponibles sous la licence <strong>Open Database License (ODbL)</strong>.
+        Ces données n'appartiennent pas à P'tiCoin. Détails de la licence : <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">openstreetmap.org/copyright</a>.
+      </p>
+    </div>
+    <div class="card">
+      <p class="card-title">Recherche de lieux</p>
+      <p>
+        Géoplateforme IGN, BAN et BD TOPO®, sous <a href="https://www.data.gouv.fr/pages/legal/licences/etalab-2.0" target="_blank" rel="noopener">Licence Ouverte Etalab 2.0</a>.
+      </p>
+    </div>
+    <p>
+      Les fonds de carte sont fournis par Apple (iPhone) et Google (Android), qui en conservent les droits. Les contenus publiés par les utilisateurs leur appartiennent (voir §6).
     </p>
 
-    <!-- 12. DROIT APPLICABLE -->
     <h2>12. Droit applicable</h2>
     <p>
       Les présentes CGU sont régies par le droit français. En cas de litige, et à défaut de résolution amiable, les tribunaux compétents seront ceux du ressort du domicile de l'éditeur.
     </p>
 
-    <!-- 13. MODIFICATIONS -->
     <h2>13. Modifications des CGU</h2>
     <p>
-      Nous nous réservons le droit de modifier les présentes CGU à tout moment. Les utilisateurs seront informés des modifications significatives dans l'application. La date en haut de page indique toujours la version en vigueur. La poursuite de l'utilisation de l'application après modification vaut acceptation des nouvelles CGU.
+      Nous nous réservons le droit de modifier les présentes CGU à tout moment. Les utilisateurs seront informés des modifications significatives dans l'application ou par e-mail. La date en haut de page indique toujours la version en vigueur. La poursuite de l'utilisation de l'application après modification vaut acceptation des nouvelles CGU. Si tu n'es pas d'accord, tu peux supprimer ton compte à tout moment.
     </p>
 
-    <!-- CONTACT -->
     <div class="contact-box">
       <p>Une question sur les CGU ?</p>
       <a href="mailto:contact@pticoin.app">contact@pticoin.app</a>
-      <p style="margin-top: 12px; font-size: 13px;">Réponse garantie sous 30 jours.</p>
+      <p style="margin-top: 12px; font-size: 13px;">Réponse sous un mois au plus (demandes RGPD : voir la politique de confidentialité, §7).</p>
     </div>
 
     <footer>
       <p>💩 P'tiCoin · <a href="cgu.html">CGU</a> · <a href="privacy.html">Politique de confidentialité</a></p>
-      <p style="margin-top: 8px;">© 2026 Nicolas Mathieu — Tous droits réservés</p>
+      <p style="margin-top: 8px;">© 2026 Nicolas Mathieu — application et mascotte · Données des toilettes : © les contributeurs d'<a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> (ODbL)</p>
     </footer>
 
   </div>
