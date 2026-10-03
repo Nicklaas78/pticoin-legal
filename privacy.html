@@ -190,7 +190,8 @@
         </svg>
       </div>
       <h1>Politique de confidentialité</h1>
-      <p class="subtitle">P'tiCoin · Dernière mise à jour : 28 septembre 2026</p>
+      <p class="subtitle">P'tiCoin · Dernière mise à jour : 3 octobre 2026</p>
+      <p class="subtitle">En vigueur à partir du 6 octobre 2026 · <a href="privacy-v2.html">Version précédente</a> (en vigueur jusqu'au 5 octobre 2026)</p>
     </header>
 
     <p>
@@ -207,26 +208,64 @@
       <p class="card-title">Nicolas Mathieu</p>
       <p>Particulier, éditeur de l'appli P'tiCoin</p>
       <p>Contact : <a href="mailto:contact@pticoin.app">contact@pticoin.app</a></p>
+      <p>Dans l'appli : <strong>Profil → Nous contacter</strong>, même sans compte.</p>
     </div>
 
     <h2>2. Ce que nous collectons</h2>
 
     <h3>2.1 Votre compte</h3>
     <p>
-      Pour créer un compte, nous demandons une <strong>adresse e-mail</strong>
+      Pour créer un compte avec votre adresse e-mail, nous demandons une <strong>adresse e-mail</strong>
       (pour vous connecter et vous envoyer les e-mails liés à votre compte), un <strong>mot de passe</strong>
       (enregistré sous une forme qui ne permet pas de le relire, même pour nous) et un <strong>pseudo</strong>
-      (affiché sur vos contributions). C'est tout. Pas de nom réel, pas de numéro de téléphone,
-      pas de date de naissance.
+      (affiché sur vos contributions). Nous ne vous demandons ni votre nom réel, ni de numéro de téléphone,
+      ni votre date de naissance.
     </p>
+    <div class="card">
+      <p class="card-title">Si vous vous connectez avec Google ou Apple</p>
+      <p>
+        Si l'appli vous propose de créer votre compte ou de vous connecter avec <strong>Google</strong>
+        (sur iPhone et Android) ou avec <strong>Apple</strong> (sur iPhone), et que vous choisissez cette option :
+      </p>
+      <ul>
+        <li>
+          <strong>Avec Google</strong>, nous recevons votre identifiant Google, votre adresse e-mail,
+          votre nom et le lien de votre photo de profil Google. Notre hébergeur les garde dans les données
+          de connexion de votre compte et les met à jour à chaque connexion. P'tiCoin n'affiche ni votre nom
+          ni votre photo Google, et ne s'en sert pas.
+        </li>
+        <li>
+          <strong>Avec Apple</strong>, nous recevons un identifiant propre à l'éditeur de P'tiCoin et votre adresse e-mail.
+          Si vous choisissez de masquer votre adresse, Apple nous donne à la place une adresse relais
+          (qui se termine par « privaterelay.appleid.com ») et fait suivre nos e-mails vers votre vraie boîte,
+          que nous ne connaissons pas. Nous ne demandons pas votre nom à Apple.
+        </li>
+        <li>
+          Vous ne créez pas de mot de passe P'tiCoin, et nous ne voyons jamais votre mot de passe Google ou Apple :
+          ces services nous confirment seulement votre identité.
+        </li>
+        <li>
+          À la première connexion, un écran « Dernière étape » vous demande de choisir votre <strong>pseudo</strong>
+          et de confirmer que vous avez au moins 15 ans et que vous acceptez les CGU et cette politique.
+          Si vous touchez « Annuler » juste après avoir créé le compte, il est aussitôt effacé.
+          Si vous quittez l'appli avant la fin, le compte reste créé, sans accord enregistré, et cet écran revient
+          à la prochaine connexion. Pour faire supprimer ce compte, écrivez-nous (§8).
+        </li>
+        <li>
+          Si un compte P'tiCoin existe déjà avec la même adresse e-mail, votre connexion Google ou Apple
+          y est rattachée automatiquement : vous retrouvez ce compte.
+        </li>
+      </ul>
+    </div>
     <p>
-      À l'inscription, nous gardons aussi la <strong>preuve de votre accord</strong> : la date,
-      la confirmation que vous avez au moins 15 ans, et les versions des CGU et de cette politique
-      que vous avez acceptées.
+      À l'inscription (ou à l'écran « Dernière étape » avec Google ou Apple), nous gardons aussi la
+      <strong>preuve de votre accord</strong> : la date, la confirmation que vous avez au moins 15 ans,
+      et les versions des CGU et de cette politique que vous avez acceptées.
     </p>
     <p>
       Les e-mails liés à votre compte (confirmation de l'inscription, mot de passe oublié) partent
       de l'adresse <a href="mailto:contact@pticoin.app">contact@pticoin.app</a>, par l'intermédiaire de notre prestataire Brevo (voir §5).
+      Si votre compte utilise une adresse relais d'Apple, ces e-mails passent par le service de relais d'Apple.
     </p>
 
     <h3>2.2 Votre position</h3>
@@ -265,7 +304,22 @@
         qui reçoivent votre adresse IP et la zone de carte affichée.
       </li>
       <li>
-        <strong>Itinéraire</strong> : le bouton « Itinéraire » ouvre votre appli de cartes habituelle, qui applique ses propres règles.
+        <strong>Itinéraire à pied</strong> : quand vous demandez l'itinéraire vers une toilette
+        (le bouton vert au panneau de direction, appelé « Y aller à pied » par VoiceOver et TalkBack,
+        dans l'aperçu de la carte et sur la fiche),
+        l'appli calcule le chemin à pied avec le service de l'IGN (Géoplateforme). Elle lui envoie votre point de départ,
+        <strong>arrondi à environ 10 m</strong>, et l'emplacement de la toilette (une donnée publique de l'appli), avec votre adresse IP.
+        Aucun identifiant de compte ne part, et rien n'est envoyé tant que vous n'avez pas demandé l'itinéraire :
+        ni à l'ouverture d'une fiche, ni en arrière-plan.
+        Pendant le trajet, votre position sert, <strong>sur votre téléphone seulement</strong>, à suivre votre avancée et à repérer votre arrivée.
+        La petite carte de cet écran est affichée, comme la carte principale, par Apple Plans ou Google Maps (puce « Fond de carte »).
+        Si vous vous écartez du chemin, l'appli peut le recalculer depuis votre nouvelle position, arrondie de la même façon,
+        au plus 5 fois par trajet. Ni votre point de départ ni le chemin ne sont enregistrés par P'tiCoin.
+      </li>
+      <li>
+        <strong>Ouvrir dans une autre appli</strong> : le lien « Ouvrir dans Plans / Google Maps » (« Google Maps / Cartes »
+        sur Android), sur l'écran d'itinéraire et sur la fiche, ou un appui long sur le bouton d'itinéraire, ouvre votre appli
+        de cartes habituelle, sans passer par l'IGN. Cette appli applique ses propres règles.
       </li>
     </ul>
 
@@ -281,8 +335,12 @@
         <td>Publique</td>
       </tr>
       <tr>
-        <td>Photos de toilettes (les informations cachées dans le fichier, dites EXIF, dont la position, sont supprimées avant l'envoi)</td>
-        <td>Publique</td>
+        <td>Photos de toilettes et d'avis (les informations cachées dans le fichier, dites EXIF, dont la position, sont supprimées avant l'envoi)</td>
+        <td>Publique, une fois vérifiée et publiée (§2.8)</td>
+      </tr>
+      <tr>
+        <td>Photo pas encore publiée (en attente de vérification ou en quarantaine), photo qui n'a pas été publiée (refusée, ou supprimée faute d'avoir pu être vérifiée), et le résultat de leur analyse</td>
+        <td>Non publiées : les autres utilisateurs n'y ont pas accès. Seuls le responsable et, pendant ses absences, la personne de confiance qu'il désigne peuvent voir une photo en quarantaine. L'appli vous indique où en est votre photo et, si elle n'est pas publiée, pourquoi (le fichier d'une photo refusée n'est pas gardé, §2.8)</td>
       </tr>
       <tr>
         <td>Avis et notes</td>
@@ -305,8 +363,20 @@
         <td>Privée — vous seul</td>
       </tr>
       <tr>
-        <td>Signalements (problème, photo, état du papier)</td>
-        <td>Privée — vous et le responsable (seul le dernier état du papier s'affiche sur la fiche, sans votre pseudo)</td>
+        <td>Signalements (fiche, photo, avis, pseudo, état du papier) : le contenu visé, le motif et la date</td>
+        <td>Privée — vous et le responsable. La personne signalée ne sait pas qui l'a signalée (seul le dernier état du papier s'affiche sur la fiche, sans votre pseudo)</td>
+      </tr>
+      <tr>
+        <td>Liste des utilisateurs que vous avez bloqués (et la date)</td>
+        <td>Privée : vous seul. La personne bloquée n'est pas prévenue. Le responsable est prévenu du premier blocage d'un compte, sans savoir qui bloque</td>
+      </tr>
+      <tr>
+        <td>Avis masqué par la modération</td>
+        <td>Vous seul (et le responsable), jusqu'à sa décision</td>
+      </tr>
+      <tr>
+        <td>Pseudo masqué par la modération</td>
+        <td>Remplacé par « P'tit anonyme » dans l'appli (une version de l'appli qui n'est pas à jour affiche à la place un identifiant technique commençant par « ptit_anonyme_ »). Le pseudo d'origine n'est plus visible par les autres : le responsable le garde à part (§6), et il reste dans les données de connexion de votre compte s'il s'agit de votre pseudo d'inscription</td>
       </tr>
     </table>
 
@@ -344,6 +414,126 @@
       avec une connexion Internet, ou quand vous supprimez votre compte.
     </p>
 
+    <h3>2.7 Signalements, blocages et modération</h3>
+    <p>
+      Plusieurs outils décrits ici arrivent avec la mise à jour de l'appli et de notre serveur d'octobre 2026 :
+      le signalement des avis et des pseudos, le retrait immédiat pour vous de ce que vous signalez, le blocage
+      d'un utilisateur, le filtre de mots et le masquage des avis et des pseudos. Ce qui suit s'applique à chacun
+      dès son arrivée.
+    </p>
+    <ul>
+      <li>
+        <strong>Signaler</strong> : avec un compte, vous pouvez signaler une fiche, une photo, un avis ou un pseudo.
+        Pour une fiche, un avis ou un pseudo, vous choisissez un motif ; une photo est signalée comme « inappropriée ».
+        Nous enregistrons le contenu visé, le motif, la date et votre compte.
+        La personne signalée ne sait pas qui l'a signalée. Un avis ou une photo que vous signalez disparaît aussitôt pour vous.
+        Sans compte, vous pouvez nous signaler un contenu par e-mail à <a href="mailto:contact@pticoin.app">contact@pticoin.app</a>
+        (l'appli peut préparer ce message) : nous gardons alors votre message comme les autres (§6).
+      </li>
+      <li>
+        <strong>Masquage automatique</strong> : dès 3 signalements de personnes différentes, une fiche, une photo ou un avis
+        est masqué, et un pseudo est remplacé par « P'tit anonyme », en attendant que le responsable vérifie.
+        Si c'est votre avis ou votre pseudo, l'appli vous l'indique.
+      </li>
+      <li>
+        <strong>Bloquer</strong> : vous pouvez bloquer un utilisateur. Vous ne voyez plus ses avis, ses photos ni son pseudo
+        (dans le classement, il apparaît pour vous sous le nom « P'tit anonyme »).
+        Nous enregistrons qui vous avez bloqué et la date. La personne bloquée n'en est pas prévenue, et le blocage ne joue
+        que dans un sens : elle voit toujours vos avis. Vous pouvez la débloquer à tout moment depuis votre profil.
+      </li>
+      <li>
+        <strong>Filtre de mots</strong> : avant leur publication, le commentaire de vos avis et votre pseudo sont vérifiés
+        automatiquement, sur votre téléphone puis sur notre serveur, à l'aide d'une liste de mots interdits
+        (injures, propos haineux et, pour un pseudo, mots à caractère sexuel et noms réservés, comme « admin » ou « modérateur »).
+        Aucun service extérieur n'analyse vos textes. Un texte refusé n'est pas publié, et il n'est pas enregistré dans notre base.
+      </li>
+      <li>
+        <strong>Alertes au responsable</strong> : un e-mail avertit le responsable (et, pendant ses absences, une personne
+        de confiance qu'il désigne) d'une nouvelle photo, d'une photo mise en quarantaine (§2.8), du premier signalement
+        d'un contenu, d'un masquage et du premier blocage d'un compte (au plus une alerte par compte bloqué tous les 30 jours). Le nombre de ces e-mails est limité
+        par heure et par jour : au-delà, l'alerte est seulement notée dans un journal, pour être vérifiée.
+        Leur contenu est détaillé au §5.1 (Brevo) : jamais votre adresse e-mail, ni l'identité de la personne qui signale ou qui bloque.
+      </li>
+      <li>
+        <strong>Décision et contestation</strong> : le responsable examine chaque cas. Il peut rétablir le contenu,
+        le laisser masqué ou le supprimer, suspendre ou supprimer un compte, et signaler aux autorités un contenu
+        manifestement illicite. Quand il retire un contenu ou suspend un compte, il en donne la raison à son auteur,
+        par e-mail à l'adresse du compte. Vous pouvez contester une décision, un masquage automatique ou le refus
+        automatique d'une photo (§2.8), en écrivant à
+        <a href="mailto:contact@pticoin.app">contact@pticoin.app</a> (dans l'appli : Profil → Nous contacter) :
+        votre demande est réexaminée par une personne (voir aussi les CGU, §7).
+      </li>
+      <li>
+        <strong>Décisions automatiques</strong> : le masquage après 3 signalements, le filtre de mots, le refus d'une
+        photo nettement inappropriée et la suppression d'une photo restée 7 jours en quarantaine sans avoir pu être
+        vérifiée (§2.8) se font sans intervention humaine. Le masquage est provisoire, le temps que le responsable
+        vérifie ; ce qui est refusé ou supprimé n'est simplement pas publié. La mise en quarantaine d'une photo n'est
+        qu'une mise de côté : une personne la regarde ensuite et décide. Aucune autre décision de modération (sur vos
+        contenus ou sur votre compte) n'est prise de façon entièrement automatique. Pour chacune, vous pouvez demander
+        qu'une personne réexamine votre cas, donner votre point de vue et contester la décision, en écrivant à
+        <a href="mailto:contact@pticoin.app">contact@pticoin.app</a> (dans l'appli : Profil → Nous contacter).
+      </li>
+    </ul>
+
+    <h3 id="verification-photos">2.8 Vérification des photos avant leur publication</h3>
+    <p>
+      Avec la mise à jour de l'appli et de notre serveur d'octobre 2026, chaque photo que vous envoyez (photo d'une
+      toilette ou d'un avis) est analysée automatiquement <strong>avant</strong> d'être publiée :
+    </p>
+    <ul>
+      <li>
+        <strong>Envoi</strong> : la photo, sans ses informations EXIF, arrive d'abord dans un espace privé de notre hébergeur,
+        auquel les autres utilisateurs n'ont pas accès. Notre serveur l'envoie alors, seule, au service d'analyse d'images
+        de Sightengine, une société française (§5.1), par son adresse européenne. Sightengine ne reçoit ni votre adresse
+        e-mail, ni votre pseudo, ni l'identifiant de votre compte, ni votre adresse IP : la demande part de notre serveur.
+      </li>
+      <li>
+        <strong>Analyse</strong> : Sightengine nous renvoie une note pour trois catégories : nudité, violence et contenus
+        sanglants ou repoussants, symboles et gestes haineux. Il supprime la photo juste après l'analyse.
+        C'est notre serveur qui applique nos règles à ces notes : Sightengine ne décide rien.
+      </li>
+      <li>
+        <strong>Photo saine</strong> : elle est publiée, en général en quelques secondes. Ses points vous sont versés à ce moment-là.
+      </li>
+      <li>
+        <strong>Photo douteuse</strong> : elle est mise en quarantaine, dans l'espace privé : seuls le responsable et, pendant
+        ses absences, la personne de confiance qu'il désigne peuvent la voir. La personne prévenue par e-mail (§5.1, Brevo) la
+        regarde, puis la publie ou la refuse (l'appli vous en donne alors la raison). C'est aussi ce qui se passe quand
+        l'analyse n'aboutit pas (service en panne, nombre maximal d'analyses atteint) : une photo n'est jamais publiée sans
+        avoir été analysée ou regardée par une personne. Une toilette sale (excréments, urine) n'est jamais refusée automatiquement : sa photo est mise
+        en quarantaine et une personne la regarde.
+      </li>
+      <li>
+        <strong>Photo restée 7 jours en quarantaine</strong> : si personne n'a pu la regarder dans ce délai (par exemple
+        pendant une absence), elle est supprimée sans être publiée. L'appli vous l'indique, et vous pouvez la renvoyer
+        ou nous écrire.
+      </li>
+      <li>
+        <strong>Photo nettement inappropriée</strong> : elle est refusée. Elle n'est pas publiée, et son fichier est supprimé aussitôt.
+        L'appli vous en donne le motif (la catégorie en cause et la règle des CGU concernée, §5), vous précise que la décision
+        a été prise par un outil automatique, et vous indique comment la contester.
+      </li>
+      <li>
+        <strong>Ce que nous gardons</strong> : une photo publiée et le résultat de son analyse (la décision, les notes et la date),
+        jusqu'à la suppression de la photo ; une photo en quarantaine, jusqu'à la décision, et 7 jours au plus ; pour une photo
+        qui n'a pas été publiée (refusée, ou supprimée faute d'avoir pu être vérifiée), seulement sa trace, sans la photo :
+        la décision, le motif, les notes de l'analyse et la date, pendant 6 mois, pour vous afficher ce motif et traiter
+        une éventuelle contestation (§6).
+      </li>
+      <li>
+        <strong>Réexamen par une personne</strong> : pour une photo refusée, ou supprimée sans avoir pu être vérifiée, écrivez-nous à
+        <a href="mailto:contact@pticoin.app">contact@pticoin.app</a> (dans l'appli : Profil → Nous contacter),
+        <strong>sans joindre la photo</strong> : n'envoyez jamais par e-mail une photo refusée. Une personne réexamine la
+        décision, et vous pouvez nous donner votre point de vue. Pour que cette personne puisse regarder la photo elle-même,
+        nous vous proposons de la renvoyer depuis l'appli : elle est alors mise en quarantaine au lieu d'être refusée automatiquement, et une
+        personne la regarde. Si elle respecte les règles, elle est publiée et vos points sont versés.
+      </li>
+      <li>
+        L'analyse ne voit pas tout : les signalements (§2.7) restent indispensables. Les photos publiées avant cette
+        mise à jour ne sont pas analysées à nouveau.
+      </li>
+    </ul>
+
     <h2>3. Pourquoi nous utilisons ces données</h2>
 
     <table>
@@ -354,6 +544,10 @@
       <tr>
         <td>Connexion et sécurité du compte</td>
         <td>Exécution du contrat (les CGU)</td>
+      </tr>
+      <tr>
+        <td>Créer votre compte ou vous connecter avec Google ou Apple, si vous le choisissez</td>
+        <td>Exécution du contrat</td>
       </tr>
       <tr>
         <td>Envoyer les e-mails liés à votre compte</td>
@@ -368,6 +562,10 @@
         <td>Exécution du contrat</td>
       </tr>
       <tr>
+        <td>Calculer et suivre un itinéraire à pied jusqu'à une toilette</td>
+        <td>Exécution du contrat</td>
+      </tr>
+      <tr>
         <td>Publier vos contributions (fiches, avis, photos, infos)</td>
         <td>Exécution du contrat</td>
       </tr>
@@ -376,8 +574,20 @@
         <td>Intérêt légitime (pouvoir prouver l'acceptation)</td>
       </tr>
       <tr>
-        <td>Traiter les signalements et modérer les contenus</td>
-        <td>Intérêt légitime (modération) et obligations légales</td>
+        <td>Recevoir et traiter les signalements, masquer et retirer les contenus, sanctionner les comptes abusifs, prévenir le responsable (alertes)</td>
+        <td>Intérêt légitime (protéger les utilisateurs et le service) et obligations légales (traitement des signalements de contenus illicites : loi pour la confiance dans l'économie numérique et, s'il s'applique, règlement européen sur les services numériques)</td>
+      </tr>
+      <tr>
+        <td>Bloquer un utilisateur et ne plus voir ses contenus</td>
+        <td>Exécution du contrat (une fonction que vous choisissez d'utiliser)</td>
+      </tr>
+      <tr>
+        <td>Refuser les injures et propos haineux avant publication (filtre de mots)</td>
+        <td>Intérêt légitime (empêcher la publication de contenus abusifs)</td>
+      </tr>
+      <tr>
+        <td>Vérifier les photos avant leur publication (analyse automatique par Sightengine, quarantaine, refus) et prévenir le responsable d'une photo mise en quarantaine</td>
+        <td>Intérêt légitime (empêcher la publication de photos illicites ou choquantes, et protéger les utilisateurs et le service)</td>
       </tr>
       <tr>
         <td>Diagnostiquer et corriger les plantages</td>
@@ -402,6 +612,7 @@
         <li>✅ Aucun historique de vos déplacements</li>
         <li>✅ Aucun partage avec des partenaires commerciaux</li>
         <li>✅ Aucun profilage publicitaire ou commercial</li>
+        <li>✅ Aucun pistage publicitaire, même si vous vous connectez avec Google ou Apple : cette connexion sert seulement à vous identifier, et nous ne nous en servons pas pour transmettre votre activité dans l'appli à ces services (les cartes et la conversion d'adresses du §2.2 marchent de la même façon sans elle)</li>
       </ul>
     </div>
 
@@ -440,13 +651,32 @@
     <div class="card">
       <p class="card-title">Brevo — Sendinblue SAS (Paris, France)</p>
       <p>
-        <strong>Rôle</strong> : envoi des e-mails liés à votre compte, et des alertes de modération adressées à l'administrateur (nouvelle photo, signalement, contenu masqué).<br />
+        <strong>Rôle</strong> : envoi des e-mails liés à votre compte, et des alertes de modération adressées au responsable
+        et, pendant ses absences, à une personne de confiance qu'il désigne
+        (nouvelle photo, photo mise en quarantaine, signalement d'une fiche, d'une photo, d'un avis ou d'un pseudo, contenu masqué, utilisateur bloqué).<br />
         <strong>Données</strong> : votre adresse e-mail, le contenu de l'e-mail (par exemple le lien de confirmation), transmis pour l'envoi mais pas conservé ensuite, et le journal d'envoi (§6).
-        Pour les alertes de modération : l'identifiant et le lien public de la photo (qui contient l'identifiant de votre compte), le motif du signalement et le nom de la toilette.
-        Jamais votre adresse e-mail, votre pseudo ni l'identité de la personne qui signale.<br />
+        Pour les alertes de modération : l'identifiant et le lien public de la photo (qui contient l'identifiant de votre compte), le motif du signalement et le nom de la toilette ;
+        pour une photo mise en quarantaine, son identifiant, l'emplacement du fichier dans l'espace privé (qui contient l'identifiant de votre compte), la catégorie en cause (ou le fait que l'analyse n'a pas abouti) et le nom de la toilette, sans la photo elle-même ;
+        pour un avis signalé ou masqué, un extrait de son texte (400 caractères au plus), sa note, son identifiant et le début de l'identifiant de votre compte ;
+        pour un pseudo signalé ou masqué, ou pour un compte bloqué, le pseudo concerné, l'identifiant du compte
+        et des compteurs (signalements reçus, nombre de comptes qui le bloquent, avis et photos visibles).
+        Les alertes ne contiennent jamais votre adresse e-mail, ni l'identité de la personne qui signale ou qui bloque.<br />
         <strong>Lieu</strong> : Union européenne.<br />
         <strong>Garanties</strong> : société française soumise au RGPD, accord de sous-traitance (DPA).<br />
         <a href="https://www.brevo.com/fr/legal/privacypolicy/" target="_blank" rel="noopener">Politique de confidentialité Brevo →</a>
+      </p>
+    </div>
+
+    <div class="card">
+      <p class="card-title">Sightengine — Kozelo SAS (Paris, France)</p>
+      <p>
+        <strong>Rôle</strong> : analyse automatique de chaque photo avant sa publication (nudité, violence et contenus sanglants ou repoussants, symboles et gestes haineux), avec la mise à jour d'octobre 2026 (§2.8).<br />
+        <strong>Données</strong> : la photo seule, sans ses informations EXIF, envoyée par notre serveur : ni votre identifiant, ni votre pseudo, ni votre adresse e-mail, ni votre adresse IP.
+        Sightengine nous renvoie une note pour chaque catégorie.<br />
+        <strong>Lieu</strong> : Espace économique européen ou Royaume-Uni (pays que la Commission européenne reconnaît comme offrant une protection adéquate des données, §5.3). Notre serveur passe par l'adresse européenne du service, et Sightengine s'engage, dans son accord de sous-traitance, à ce que les photos ne quittent pas cette zone.<br />
+        <strong>Conservation</strong> : Sightengine supprime la photo juste après l'analyse.<br />
+        <strong>Garanties</strong> : société française soumise au RGPD, accord de sous-traitance (DPA).<br />
+        <a href="https://sightengine.com/policies/privacy" target="_blank" rel="noopener">Politique de confidentialité de Sightengine →</a>
       </p>
     </div>
 
@@ -495,7 +725,13 @@
         <strong>Sur Android</strong> : affichage du fond de carte (SDK Google Maps). Le SDK recueille l'adresse IP,
         le modèle et le système du téléphone, un identifiant pseudonyme propre au SDK, les déplacements et zooms
         sur la carte, et ses propres rapports de plantage. Google fournit aussi la conversion adresse ↔ position (§2.2).<br />
-        <strong>Messagerie</strong> : la boîte Gmail qui reçoit les e-mails envoyés à contact@pticoin.app et les alertes de modération adressées au responsable (§5.1, Brevo).<br />
+        <strong>Messagerie</strong> : la boîte Gmail qui reçoit les e-mails envoyés à contact@pticoin.app et les alertes de modération adressées au responsable (§5.1, Brevo).
+        C'est aussi depuis cette boîte que le responsable vous répond et vous écrit (par exemple pour une décision de modération ou pour vous annoncer un changement de ces textes).<br />
+        <strong>Connexion avec Google</strong> (si vous la choisissez, §2.1) : Google vous identifie, et sait donc que vous utilisez P'tiCoin.
+        Il nous transmet votre identifiant Google, votre adresse e-mail, votre nom et le lien de votre photo de profil.
+        Quand vous supprimez votre compte depuis l'appli, celle-ci demande à Google de retirer l'accès donné à P'tiCoin dans votre compte Google (§7 : vous pouvez aussi le faire vous-même).
+        L'usage des informations reçues des API de Google respecte la règle de Google sur les données des utilisateurs
+        de ses services d'API (« Google API Services User Data Policy »), y compris ses exigences d'utilisation limitée.<br />
         <a href="https://policies.google.com/privacy?hl=fr" target="_blank" rel="noopener">Règles de confidentialité Google →</a>
       </p>
     </div>
@@ -504,6 +740,10 @@
       <p class="card-title">Apple — Apple Distribution International Ltd. (Irlande)</p>
       <p>
         <strong>Sur iPhone</strong> : affichage du fond de carte (Apple Plans) et conversion adresse ↔ position (§2.2).<br />
+        <strong>Connexion avec Apple</strong> (si vous la choisissez, sur iPhone, §2.1) : Apple vous identifie, et sait donc que vous utilisez P'tiCoin.
+        Il nous transmet un identifiant propre à l'éditeur de P'tiCoin et votre adresse e-mail, ou une adresse relais si vous masquez la vôtre ;
+        dans ce cas, nos e-mails passent par le service de relais d'Apple. Quand vous supprimez votre compte depuis l'appli,
+        Apple vous demande de confirmer, puis nous lui demandons de retirer l'autorisation donnée à P'tiCoin (§7).<br />
         <a href="https://www.apple.com/fr/legal/privacy/" target="_blank" rel="noopener">Engagement de confidentialité Apple →</a>
       </p>
     </div>
@@ -513,6 +753,9 @@
       <p>
         <strong>Recherche de lieux</strong> (service public Géoplateforme, sans compte) : le texte tapé,
         une position approximative (environ 1 km) et votre adresse IP (§2.2).<br />
+        <strong>Itinéraire à pied</strong> (même service public, sans compte) : votre point de départ arrondi à environ 10 m,
+        l'emplacement de la toilette et votre adresse IP, seulement quand vous demandez l'itinéraire, puis lors d'un
+        éventuel recalcul (au plus 5 par trajet). Aucun identifiant de compte (§2.2).<br />
         <a href="https://cartes.gouv.fr/donnees-personnelles/" target="_blank" rel="noopener">Données personnelles sur cartes.gouv.fr →</a>
       </p>
     </div>
@@ -524,6 +767,19 @@
       Data Privacy Framework UE–États-Unis (Sentry, Expo, GitHub) ou par les clauses contractuelles types
       de la Commission européenne (Supabase, et en secours pour les autres).
     </p>
+    <p>
+      Les photos analysées par Sightengine (§5.1) restent dans l'Espace économique européen ou au Royaume-Uni.
+      Le Royaume-Uni bénéficie d'une décision d'adéquation de la Commission européenne, qui le reconnaît comme
+      assurant une protection des données équivalente pour l'essentiel à celle de l'Union : aucune autre garantie
+      n'est alors nécessaire.
+    </p>
+
+    <h3>5.4 Autorités publiques</h3>
+    <p>
+      Nous ne transmettons des données à une autorité que dans deux cas : quand nous signalons un contenu manifestement
+      illicite (par exemple sur la plateforme PHAROS), et quand la justice ou la police nous le demandent dans le cadre
+      prévu par la loi. Nous ne transmettons alors que ce qui est nécessaire.
+    </p>
 
     <h2>6. Combien de temps gardons-nous vos données</h2>
     <table>
@@ -534,6 +790,18 @@
       <tr>
         <td>Compte et profil (e-mail, pseudo, points, badges)</td>
         <td>Jusqu'à la suppression du compte</td>
+      </tr>
+      <tr>
+        <td>Données reçues de Google ou d'Apple, si vous vous connectez ainsi (identifiant, adresse e-mail ; avec Google, nom et lien de la photo de profil)</td>
+        <td>Jusqu'à la suppression du compte</td>
+      </tr>
+      <tr>
+        <td>Compte créé avec Google ou Apple dont l'écran « Dernière étape » n'a pas été validé (sans accord enregistré)</td>
+        <td>Jusqu'à sa suppression : écrivez-nous pour la demander (§8)</td>
+      </tr>
+      <tr>
+        <td>Confirmation demandée à Apple au moment de supprimer votre compte</td>
+        <td>Pas conservée : elle sert une seule fois, à retirer l'autorisation donnée à P'tiCoin</td>
       </tr>
       <tr>
         <td>Preuve de votre accord (date, âge minimum, versions acceptées)</td>
@@ -548,28 +816,76 @@
         <td>Jusqu'à la suppression du compte, ou de la photo si vous la supprimez</td>
       </tr>
       <tr>
+        <td>Photo en attente de vérification</td>
+        <td>Le temps de l'analyse, en général quelques secondes</td>
+      </tr>
+      <tr>
+        <td>Photo mise en quarantaine</td>
+        <td>Jusqu'à la décision du responsable ou de la personne de confiance qui le remplace (publication, ou refus et suppression), et 7 jours au plus : passé ce délai, elle est supprimée sans être publiée. Une photo qui semble illicite est signalée aux autorités, puis supprimée, sauf si elles demandent de la garder</td>
+      </tr>
+      <tr>
+        <td>Photo refusée (le fichier)</td>
+        <td>Pas gardée : elle est supprimée dès son refus</td>
+      </tr>
+      <tr>
+        <td>Trace d'une photo qui n'a pas été publiée (refusée, ou supprimée faute d'avoir pu être vérifiée) : la décision, le motif, les notes de l'analyse, la date et, si vous contestez, notre accord pour que la photo renvoyée soit regardée par une personne. Jamais la photo elle-même</td>
+        <td>6 mois après la décision (ou jusqu'à la suppression du compte, si elle a lieu avant)</td>
+      </tr>
+      <tr>
+        <td>Résultat de l'analyse d'une photo publiée (décision, notes, date)</td>
+        <td>Comme la photo : il est supprimé avec elle</td>
+      </tr>
+      <tr>
+        <td>Photo envoyée à Sightengine pour être analysée</td>
+        <td>Supprimée par Sightengine juste après l'analyse (§5.1)</td>
+      </tr>
+      <tr>
         <td>Fiches de toilettes que vous avez ajoutées</td>
         <td>Elles restent dans l'appli (voir plus bas)</td>
       </tr>
       <tr>
-        <td>Signalements (problème, photo, état du papier)</td>
-        <td>Jusqu'à la suppression du compte</td>
+        <td>Signalements que vous faites (fiche, photo, avis, pseudo, état du papier)</td>
+        <td>Jusqu'à la suppression du compte. Un signalement jugé abusif est effacé quand le contenu visé est rétabli</td>
+      </tr>
+      <tr>
+        <td>Signalements qui visent votre pseudo</td>
+        <td>Jusqu'à la suppression de votre compte. Ceux jugés abusifs sont effacés quand votre pseudo est rétabli</td>
+      </tr>
+      <tr>
+        <td>Signalements qui visent vos avis</td>
+        <td>Gardés avec le compte de la personne qui les a faits ; si vous supprimez votre compte, ils ne sont plus liés à vous. Ceux jugés abusifs sont effacés quand votre avis est rétabli</td>
+      </tr>
+      <tr>
+        <td>Liste des utilisateurs que vous avez bloqués</td>
+        <td>Jusqu'au déblocage, ou à la suppression de votre compte ou du compte bloqué</td>
+      </tr>
+      <tr>
+        <td>Avis masqué par la modération</td>
+        <td>Comme les autres avis : jusqu'à sa suppression (par vous, ou par le responsable s'il est contraire aux règles) ou celle du compte</td>
+      </tr>
+      <tr>
+        <td>Pseudo d'origine d'un pseudo masqué : gardé à part par le responsable et, s'il s'agit de votre pseudo d'inscription, dans les données de connexion de votre compte</td>
+        <td>Jusqu'à son rétablissement ou sa correction, ou la suppression du compte</td>
       </tr>
       <tr>
         <td>Trace d'une photo masquée par la modération (emplacement du fichier, date), pour empêcher sa republication</td>
         <td>Jusqu'à la suppression du compte</td>
       </tr>
       <tr>
-        <td>Journal des alertes de modération (sans identifiant de compte)</td>
+        <td>Journal des alertes de modération (type d'alerte, date, contenu visé ; l'identifiant du compte seulement pour une alerte sur un pseudo ou un blocage, retiré à la suppression du compte)</td>
         <td>12 mois</td>
       </tr>
       <tr>
-        <td>Alertes de modération reçues par e-mail par le responsable (lien public de la photo, qui contient l'identifiant de votre compte ; nom de la toilette ; motif)</td>
-        <td>12 mois au plus après réception (plus longtemps seulement si le cas a été transmis aux autorités, le temps de la procédure)</td>
+        <td>Alertes de modération reçues par e-mail par le responsable ou, pendant ses absences, par la personne de confiance qu'il désigne (lien public de la photo, qui contient l'identifiant de votre compte ; pour une photo mise en quarantaine, l'emplacement du fichier et la catégorie en cause ; nom de la toilette ; motif ; extrait d'un avis ou pseudo signalé, masqué ou bloqué ; identifiant du compte pour un pseudo ou un blocage)</td>
+        <td>12 mois au plus après réception (plus longtemps seulement si le cas a été transmis aux autorités, le temps de la procédure). La personne de confiance supprime les siennes à la fin de son remplacement</td>
       </tr>
       <tr>
         <td>Position envoyée pour calculer les distances</td>
         <td>Pas conservée</td>
+      </tr>
+      <tr>
+        <td>Point de départ envoyé pour calculer un itinéraire, et le chemin reçu</td>
+        <td>Pas conservés par P'tiCoin : ils restent sur votre téléphone le temps du trajet. L'IGN applique ses propres règles à ses journaux techniques (§5.2)</td>
       </tr>
       <tr>
         <td>Rapports de plantage (Sentry)</td>
@@ -629,6 +945,8 @@
       <p>
         Une partie de vos données est visible directement dans l'onglet Profil de l'application.
         Pour recevoir une copie complète, écrivez à <a href="mailto:contact@pticoin.app">contact@pticoin.app</a>.
+        Cette copie contient aussi la liste des utilisateurs que vous avez bloqués, le nombre de comptes qui vous ont
+        bloqué (sans leur identité) et les signalements qui visent vos contenus et votre pseudo (sans l'identité de leurs auteurs).
       </p>
     </div>
 
@@ -637,6 +955,7 @@
       <p>
         Pour modifier votre pseudo ou corriger une donnée, écrivez-nous à
         <a href="mailto:contact@pticoin.app">contact@pticoin.app</a> : nous faisons la modification pour vous.
+        C'est aussi le cas si votre pseudo a été masqué par la modération et que vous voulez en choisir un autre.
       </p>
     </div>
 
@@ -647,18 +966,54 @@
         Vos données personnelles sont alors supprimées immédiatement et définitivement de notre base
         (le détail est au §8). Les journaux techniques, les rapports de plantage, les journaux d'envoi
         des e-mails et les sauvegardes disparaissent aux durées indiquées au §6.
+        Si votre compte est relié à Apple, Apple vous demande d'abord de confirmer, puis nous lui demandons
+        de retirer l'autorisation donnée à P'tiCoin. S'il est relié à Google, l'appli demande aussi à Google
+        de retirer l'accès donné à P'tiCoin dans votre compte Google.
+        Si ce retrait n'aboutit pas (par exemple si vous vous étiez connecté avec votre mot de passe sur ce téléphone),
+        vous pouvez le faire vous-même dans votre compte Google (voir le §8).
         Vous n'avez plus l'appli ? Voir le §8 ci-dessous.
       </p>
     </div>
 
     <div class="card">
       <p class="card-title">⛔ Droit d'opposition</p>
-      <p>Vous pouvez vous opposer à certains traitements en nous écrivant à <a href="mailto:contact@pticoin.app">contact@pticoin.app</a>.</p>
+      <p>
+        Vous pouvez vous opposer, pour une raison tenant à votre situation, aux traitements fondés sur notre intérêt
+        légitime (listés au §3 : preuve de votre accord, modération et alertes, filtre de mots, vérification des photos,
+        rapports de plantage, journaux de sécurité), en nous écrivant à <a href="mailto:contact@pticoin.app">contact@pticoin.app</a>.
+        Nous arrêtons alors, sauf motif légitime et impérieux, ou si ces données servent à faire valoir ou à défendre des droits.
+      </p>
+    </div>
+
+    <div class="card">
+      <p class="card-title">⏸️ Droit à la limitation</p>
+      <p>
+        Vous pouvez nous demander de geler l'usage d'une donnée (la garder sans nous en servir), par exemple le temps
+        de vérifier une donnée que vous contestez, en écrivant à <a href="mailto:contact@pticoin.app">contact@pticoin.app</a>.
+      </p>
+    </div>
+
+    <div class="card">
+      <p class="card-title">🕊️ Directives après votre décès</p>
+      <p>
+        Vous pouvez nous indiquer ce que vous souhaitez que deviennent vos données après votre décès (conservation,
+        effacement, communication à une personne que vous désignez), en écrivant à <a href="mailto:contact@pticoin.app">contact@pticoin.app</a>.
+      </p>
     </div>
 
     <div class="card">
       <p class="card-title">📦 Droit à la portabilité</p>
       <p>Vous pouvez demander un export de vos données par e-mail, dans un format lisible par un ordinateur (un fichier JSON). Nous vous répondons sous un mois au plus.</p>
+    </div>
+
+    <div class="card">
+      <p class="card-title">💬 Contester une décision de modération</p>
+      <p>
+        Votre avis ou votre pseudo a été masqué, une photo refusée, restée en quarantaine ou supprimée sans avoir pu être
+        vérifiée, un contenu a été retiré ou votre compte suspendu, et vous pensez qu'il s'agit d'une erreur ? Écrivez à <a href="mailto:contact@pticoin.app">contact@pticoin.app</a>
+        (dans l'appli : Profil → Nous contacter), sans joindre de photo : une personne réexamine la décision et vous répond
+        (voir les §2.7 et §2.8, et les CGU, §7).
+      </p>
     </div>
 
     <p>
@@ -675,22 +1030,31 @@
       <li>
         Écrivez à <a href="mailto:contact@pticoin.app?subject=Supprimer%20mon%20compte%20P%27tiCoin">contact@pticoin.app</a>
         <strong>depuis l'adresse e-mail de votre compte</strong>, avec pour objet « Supprimer mon compte P'tiCoin ».
+        Votre compte utilise une adresse relais d'Apple ? Écrivez depuis votre boîte habituelle, en indiquant cette adresse
+        relais (elle figure dans les réglages de votre identifiant Apple, rubrique « Se connecter avec Apple »).
       </li>
       <li>
-        Nous vous envoyons un code de confirmation à l'adresse du compte : renvoyez-le-nous pour confirmer.
+        Nous vous envoyons un code de confirmation à l'adresse du compte (pour une adresse relais, Apple le fait suivre
+        vers votre boîte) : renvoyez-le-nous pour confirmer.
         Cela évite qu'une autre personne supprime votre compte à votre place.
       </li>
       <li>
         Nous supprimons le compte dans un délai d'un mois au plus, et nous vous le confirmons par e-mail.
       </li>
     </ol>
+    <p>
+      Votre compte était relié à Google ou à Apple ? Sans l'appli, nous ne pouvons pas retirer nous-mêmes l'autorisation
+      donnée à P'tiCoin. Après la suppression, vous pouvez le faire dans les réglages de votre identifiant Apple
+      (rubrique « Se connecter avec Apple »), ou dans votre compte Google (rubrique des applications et services tiers connectés).
+    </p>
     <div class="card">
       <p class="card-title">Ce qui est effacé (comme depuis l'appli)</p>
       <ul>
-        <li>votre compte : adresse e-mail et mot de passe ;</li>
+        <li>votre compte : adresse e-mail, mot de passe et, si vous vous connectiez ainsi, les données reçues de Google ou d'Apple ;</li>
         <li>votre profil : pseudo, points, niveau, badges, séries ;</li>
-        <li>vos avis, vos photos et vos favoris ;</li>
+        <li>vos avis, vos photos (y compris celles en attente ou en quarantaine, le résultat de leur analyse et la trace de celles qui n'ont pas été publiées) et vos favoris ;</li>
         <li>vos signalements, l'historique de vos points et de vos ajouts d'infos ;</li>
+        <li>la liste des utilisateurs que vous avez bloqués, les blocages qui vous visent, les signalements qui visent votre pseudo et, s'il a été masqué, votre pseudo d'origine ;</li>
         <li>la preuve de votre accord aux CGU et à cette politique.</li>
       </ul>
       <p class="card-title">Ce qui reste</p>
@@ -698,8 +1062,10 @@
         <li>les fiches de toilettes que vous avez ajoutées et les infos ajoutées aux fiches, sans lien avec vous ;</li>
         <li>les journaux techniques, les rapports de plantage, les journaux d'envoi des e-mails et les sauvegardes, jusqu'à leur effacement (§6) ;</li>
         <li>votre adresse, si elle figure sur la liste de blocage de Brevo, jusqu'à ce que vous demandiez son retrait (§6) ;</li>
-        <li>le journal des alertes de modération, qui ne contient aucun identifiant de compte, pendant 12 mois (§6) ;</li>
-        <li>les e-mails d'alerte de modération reçus par le responsable, jusqu'à leur suppression (§6) ;</li>
+        <li>les signalements faits par d'autres sur vos avis, sans lien avec votre compte ;</li>
+        <li>une photo signalée aux autorités, si elles demandent de la garder, le temps de la procédure (§6) ;</li>
+        <li>le journal des alertes de modération, dont l'identifiant de votre compte est retiré, pendant 12 mois (§6) ;</li>
+        <li>les e-mails d'alerte de modération reçus par le responsable (ou la personne de confiance qui le remplace), jusqu'à leur suppression (§6) ;</li>
         <li>nos échanges par e-mail, 1 an après notre dernier échange, et la ligne de notre registre qui trace votre demande (avec votre adresse e-mail et l'identifiant du compte), 3 ans après notre réponse (§6).</li>
       </ul>
     </div>
@@ -714,7 +1080,9 @@
       <li><strong>En transit</strong> : toutes les communications passent par HTTPS/TLS — rien ne circule en clair sur le réseau.</li>
       <li><strong>Au repos</strong> : les données sont chiffrées sur les serveurs Supabase (AES-256).</li>
       <li><strong>Sur votre téléphone</strong> : votre session est stockée dans le trousseau sécurisé de l'appareil (iOS Keychain / Android KeyStore), jamais dans un fichier accessible.</li>
-      <li><strong>Dans la base de données</strong> : chaque utilisateur ne peut lire que ses propres données privées, grâce au Row Level Security de PostgreSQL.</li>
+      <li><strong>Dans la base de données</strong> : chaque utilisateur ne peut lire que ses propres données privées (dont ses signalements et sa liste de blocages), grâce au Row Level Security de PostgreSQL.</li>
+      <li><strong>Photos pas encore publiées</strong> (avec la mise à jour d'octobre 2026, §2.8) : rangées dans un espace privé de notre hébergeur, sans adresse publique, jusqu'à leur publication. Seul notre serveur les envoie à Sightengine pour l'analyse, par une connexion chiffrée.</li>
+      <li><strong>Connexion avec Google ou Apple</strong> (si vous la choisissez) : ces services envoient à l'appli un jeton signé, que notre hébergeur vérifie avant d'ouvrir votre session. Nous ne voyons jamais votre mot de passe Google ou Apple.</li>
     </ul>
 
     <h2>10. Mineurs</h2>
@@ -722,14 +1090,16 @@
       P'tiCoin est destiné aux personnes de <strong>15 ans et plus</strong>.
       Ce seuil correspond à l'âge légal retenu par la France pour le consentement au traitement
       des données personnelles d'un mineur (article 8 du RGPD, transposition française).
-      Lors de la création de votre compte, vous confirmez avoir au moins 15 ans en cochant la case dédiée.
+      Lors de la création de votre compte (ou, avec Google ou Apple, sur l'écran « Dernière étape »), vous confirmez avoir au moins 15 ans en cochant la case dédiée.
+      Avec Google ou Apple, un compte dont cet écran n'a pas été validé reste créé sans cette confirmation (§2.1).
       Si vous pensez que votre enfant a créé un compte, écrivez-nous : après vérification, nous le supprimerons sans délai.
     </p>
 
     <h2>11. Mises à jour de cette politique</h2>
     <p>
       Si nous modifions cette politique, nous vous en informons avant que les changements ne prennent effet,
-      dans l'application ou par e-mail. La date en haut de page indique toujours la version en vigueur.
+      dans l'application ou par e-mail. La date en haut de page indique la dernière modification ; la date d'entrée
+      en vigueur figure juste en dessous, avec un lien vers la version précédente.
     </p>
 
     <div class="contact-box">
